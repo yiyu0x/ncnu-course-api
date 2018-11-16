@@ -20,3 +20,14 @@
 
 *if you want to get data from your self, you can run*
 > node data/getData.js
+
+## API 
+
+- get first 20 data
+  - `/api`
+- get data with specific faculty
+  - `/api/faculty/:fac`
+- get data with specific department
+  - `/api/department/:dep`
+- 指定學院取得系所列表
+  - `/api/getDep/:fac`
