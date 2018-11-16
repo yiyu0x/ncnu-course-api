@@ -15,5 +15,8 @@
 4. run web server (resful api)
 > node server/app.js
 
-if you want to get data from your self, you can run
+5. visit `http://127.0.0.1:5488/api`
+
+
+*if you want to get data from your self, you can run*
 > node data/getData.js
