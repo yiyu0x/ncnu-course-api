@@ -1,0 +1,25 @@
+{
+  "name": "ncnu-course-api",
+  "version": "1.0.0",
+  "description": "🏫 A simple course API for NCNU",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiyu0x/NCNU-course-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiyu0x/NCNU-course-API/issues"
+  },
+  "homepage": "https://github.com/yiyu0x/NCNU-course-API#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.12",
+    "xml2json": "^0.11.2"
+  }
+}
