@@ -5,16 +5,19 @@
 
 ## Usage
 
-- get first 20 data
+- 取得前20筆課程資訊
   - `/api`
 - 取得全部課程資訊
   - `/api/all`
-- get data with specific faculty
-  - `/api/faculty/:fac`
-- get data with specific department
-  - `/api/department/:dep`
-- 指定學院取得系所列表
-  - `/api/getDep/:fac`
+- 指定學院，取得該學院全部課程資訊
+  - `/api/faculty/<學院名稱>`
+  - ex: `/api/faculty/教育學院`
+- 指定系所，取得該系所全部課程資訊
+  - `/api/department/<系所名稱>`
+  - ex: `/api/department/資管系`
+- 指定學院，取得全部系所列表
+  - `/api/getDep/<學院名稱>`
+  - ex: `/api/getDep/人文學院`
   
   
 
