@@ -25,6 +25,8 @@
 
 - get first 20 data
   - `/api`
+- 取得全部課程資訊
+  - `/api/all`
 - get data with specific faculty
   - `/api/faculty/:fac`
 - get data with specific department
