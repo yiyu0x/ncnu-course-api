@@ -1,7 +1,24 @@
 # NCNU-course-API
-🏫 A simple course API for NCNU
+
+## Intro
+學校課程資訊的 API 給了一份 [XML](https://api.ncnu.edu.tw/API/get.aspx?xml=course_ncnu&year=107&semester=1&unitId=all) ，使用起來相當不便，於是開始了自行打造好用的 RESTful API 想法
 
 ## Usage
+
+- get first 20 data
+  - `/api`
+- 取得全部課程資訊
+  - `/api/all`
+- get data with specific faculty
+  - `/api/faculty/:fac`
+- get data with specific department
+  - `/api/department/:dep`
+- 指定學院取得系所列表
+  - `/api/getDep/:fac`
+  
+  
+
+## Deploy
 
 1. run mongodb 
 > docker run -p 27017:27017 -d --entrypoint=mongod mongo --bind_ip_all
@@ -20,16 +37,3 @@
 
 *if you want to get data from your self, you can run*
 > node data/getData.js
-
-## API 
-
-- get first 20 data
-  - `/api`
-- 取得全部課程資訊
-  - `/api/all`
-- get data with specific faculty
-  - `/api/faculty/:fac`
-- get data with specific department
-  - `/api/department/:dep`
-- 指定學院取得系所列表
-  - `/api/getDep/:fac`
