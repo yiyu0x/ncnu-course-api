@@ -16,27 +16,28 @@
   - `/api/department/<系所名稱>`
   - ex: `/api/department/資管系`
 - 指定學院，取得全部系所列表
-  - `/api/getDep/<學院名稱>`
-  - ex: `/api/getDep/人文學院`
-  
-  
+  - `/api/depList/<學院名稱>`
+  - ex: `/api/depList/人文學院`
+- 指定課號，取得該課程資訊
+  - `/api/id/<課號>`
+  - ex: `.api/id/`
 
 ## Deploy
 
 1. run mongodb 
-> docker run -p 27017:27017 -d --entrypoint=mongod mongo --bind_ip_all
+`docker run -p 27017:27017 -d --entrypoint=mongod mongo --bind_ip_all`
 
 2. copy data to container
-> docker cp ./data/course_data.json <container-name-or-id>:/tmp/course_data.json
+`docker cp ./data/course_data.json <container-name-or-id>:/tmp/course_data.json`
 
 3. import data to mongodb
-> docker exec -it <container-name-or-id> mongoimport  --db ncnu --collection class --file tmp/course_data.json --jsonArray
+`docker exec -it <container-name-or-id> mongoimport  --db ncnu --collection class --file tmp/course_data.json --jsonArray`
   
 4. run web server (resful api)
-> node server/app.js
+`node server/app.js`
 
 5. visit `http://127.0.0.1:5488/api`
 
 
 *if you want to get data from your self, you can run*
-> node data/getData.js
+`node data/getData.js`
