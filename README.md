@@ -43,6 +43,6 @@
 5. visit `http://127.0.0.1:5488/api`
 
 
-*if you want to get data from your self, you can run*
+*if you want to get data by your self, you can run*
 
 `node data/getData.js`
