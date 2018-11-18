@@ -21,7 +21,7 @@ const fields = {
     _id: 0,
     course_cname: 1,
     course_credit: 1,
-    cousre_id: 1,
+    course_id: 1,
     department: 1,
     division: 1,
     faculty: 1,
