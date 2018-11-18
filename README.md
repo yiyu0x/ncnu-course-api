@@ -20,7 +20,7 @@
   - ex: `/api/depList/人文學院`
 - 指定課號，取得該課程資訊
   - `/api/id/<課號>`
-  - ex: `.api/id/`
+  - ex: `/api/id/010036`
 
 ## Deploy
 
