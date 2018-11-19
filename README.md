@@ -5,8 +5,9 @@
 
 ## Usage
 
-- 取得前20筆課程資訊
-  - `/api`
+- 取得前n筆課程資訊
+  - `/api/<數量>`
+  - ex: `/api/20`
 - 取得全部課程資訊
   - `/api/all`
 - 指定學院，取得該學院全部課程資訊
@@ -20,7 +21,7 @@
   - ex: `/api/depList/人文學院`
 - 指定課號，取得該課程資訊
   - `/api/id/<課號>`
-  - ex: `.api/id/`
+  - ex: `/api/id/010036`
 
 ## Deploy
 
@@ -43,6 +44,6 @@
 5. visit `http://127.0.0.1:5488/api`
 
 
-*if you want to get data from your self, you can run*
+*if you want to get data by your self, you can run*
 
 `node data/getData.js`
