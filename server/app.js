@@ -24,7 +24,7 @@ app.get('/api/all', function (req, res) {
 
 app.get('/api/:many', function (req, res) {
     const many = parseInt(req.params.many, 10);
-    Mongo.find({}, fields, {limit: many, sort: {cousre_id: 1}}, function (err, doc) {
+    Mongo.find({}, fields, {sort: {cousre_id: 1}, limit: many}, function (err, doc) {
         if (err) res.status(500).send('API error');
         else res.send(doc);
     });
@@ -41,6 +41,22 @@ app.get('/api/faculty/:fac', function (req, res) {
 app.get('/api/department/:dep', function (req, res) {
     const dep = req.params.dep;
     Mongo.find({department: dep}, fields, {sort: {cousre_id: 1}}, function (err, doc) {
+        if (err) res.status(500).send('API error');
+        else res.send(doc);
+    });
+});
+
+app.get('/api/teacher/:name', function (req, res) {
+    const name = req.params.name;
+    Mongo.find({teacher: {"$regex": name, "$options": "i"}}, fields, {sort: {cousre_id: 1}}, function (err, doc) {
+        if (err) res.status(500).send('API error');
+        else res.send(doc);
+    });
+});
+
+app.get('/api/course/:cname', function (req, res) {
+    const cname = req.params.cname;
+    Mongo.find({course_cname: {"$regex": cname, "$options": "i"}}, fields, {sort: {cousre_id: 1}}, function (err, doc) {
         if (err) res.status(500).send('API error');
         else res.send(doc);
     });
