@@ -44,6 +44,8 @@
 4. run web server (resful api)
 
 `node server/app.js`
+or 
+`pm2 start server/app.js`
 
 5. visit `http://127.0.0.1:5488/api`
 
