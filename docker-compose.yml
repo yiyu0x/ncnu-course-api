@@ -12,7 +12,7 @@ services:
         build: .
         ports:
             - "8080:5488"
-        depends_on:
+        links:
             - mongo-seed
-            
+
 
