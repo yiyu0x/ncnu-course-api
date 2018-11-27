@@ -27,7 +27,12 @@
 - 指定課程名稱，取得匹配字串
   - `/api/course/<課程名字>`
   - 可用關鍵字
+
 ## Deploy
+
+`docker-compose up -d`
+
+## Deploy(old)
 
 1. run mongodb 
 

@@ -1,0 +1,19 @@
+version: '3'
+services:
+    mongodb:
+        image: mongo
+        ports:
+            - "27017:27017"
+    mongo-seed:
+        build: ./data
+        depends_on:
+            - mongodb
+    web:
+        build: .
+        ports:
+            - "8080:5488"
+        links:
+            - mongo-seed
+            - mongodb
+
+
