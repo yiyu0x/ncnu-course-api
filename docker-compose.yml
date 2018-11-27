@@ -14,5 +14,6 @@ services:
             - "8080:5488"
         links:
             - mongo-seed
+            - mongodb
 
 
