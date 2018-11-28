@@ -15,5 +15,3 @@ services:
         links:
             - mongo-seed
             - mongodb
-
-

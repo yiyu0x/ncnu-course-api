@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongodb/ncnu', { useNewUrlParser: true }, function(err, db) {
+
+let mongodb_path = 'mongodb://localhost/ncnu'
+if (process.env.NODE_ENV=='dokcer') 
+    mongodb_path = 'mongodb://mongodb/ncnu'
+
+mongoose.connect(mongodb_path, { useNewUrlParser: true }, function(err, db) {
     if (err) {
         console.log('Unable to connect to the server. Please start the server. Error:', err);
     } else {
@@ -7,15 +12,9 @@ mongoose.connect('mongodb://mongodb/ncnu', { useNewUrlParser: true }, function(e
     }
 });
 
-
-
-
 const db = mongoose.connection;
 const Schema = new mongoose.Schema({});
 const Mongo = mongoose.model('Mongo', Schema, 'class');
-//Mongo.find({}, function (err, data) {
-//	console.log(data)
-//});
 
 const fields = {
     _id: 0,
