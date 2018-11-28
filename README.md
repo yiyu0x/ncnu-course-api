@@ -28,11 +28,11 @@
   - `/api/course/<課程名字>`
   - 可用關鍵字
 
-## Deploy
+## Deploy ( server + mongodb )
 
 `docker-compose up -d`
 
-## Deploy(old)
+### Deploy step by step ( only mongodb )
 
 1. run mongodb 
 
