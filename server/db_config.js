@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 let mongodb_path = 'mongodb://localhost/ncnu'
-if (process.env.NODE_ENV=='docker') 
+if (process.env.NODE_ENV=='docker'){
     mongodb_path = 'mongodb://mongodb/ncnu'
-
+	console.log('docker env detected')
+}
 mongoose.connect(mongodb_path, { useNewUrlParser: true }, function(err, db) {
     if (err) {
         console.log('Unable to connect to the server. Please start the server. Error:', err);
