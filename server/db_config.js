@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 let mongodb_path = 'mongodb://localhost/ncnu'
-if (process.env.NODE_ENV=='dokcer') 
+if (process.env.NODE_ENV=='docker') 
     mongodb_path = 'mongodb://mongodb/ncnu'
 
 mongoose.connect(mongodb_path, { useNewUrlParser: true }, function(err, db) {
