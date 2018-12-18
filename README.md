@@ -52,7 +52,7 @@
 or 
 `pm2 start server/app.js`
 
-5. visit `http://127.0.0.1:5488/api`
+5. visit `http://127.0.0.1:5488/api/5`
 
 
 *if you want to get data by your self, you can run*
