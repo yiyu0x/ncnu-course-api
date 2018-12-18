@@ -30,6 +30,8 @@
 
 ## Deploy ( server + mongodb )
 
+`export NODE_ENV=docker`
+
 `docker-compose up -d`
 
 ### Deploy step by step ( only mongodb )
