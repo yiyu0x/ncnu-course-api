@@ -28,7 +28,7 @@
   - `/api/course/<課程名字>`
   - 可用關鍵字
 
-## Deploy ( server + mongodb )
+## Deploy ( server + mongodb ) (not support 1072)
 
 `export NODE_ENV=docker`
 
