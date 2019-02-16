@@ -34,6 +34,8 @@
 
 `docker-compose up -d`
 
+visit `http://127.0.0.1:8080/api/5`
+
 ### Deploy step by step ( only mongodb )
 
 1. run mongodb 
