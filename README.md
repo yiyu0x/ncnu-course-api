@@ -27,7 +27,10 @@
 - 指定課程名稱，取得匹配字串
   - `/api/course/<課程名字>`
   - 可用關鍵字
-
+- 教師名單
+  - `/api/teacherList/all`
+- 課程名稱名單
+  - `/api/courseList/all`
 ## Deploy ( server + mongodb ) 
 
 `export NODE_ENV=docker`
