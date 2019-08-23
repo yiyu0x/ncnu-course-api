@@ -33,6 +33,8 @@
   - `/api/courseList/all`
 ## Deploy ( server + mongodb ) 
 
+`docker-compose build`
+
 `export NODE_ENV=docker`
 
 `docker-compose up -d`
