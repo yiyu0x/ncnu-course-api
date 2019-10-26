@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.12",
+    "mongoose": "^5.7.5",
     "xml2json": "^0.11.2"
   }
 }
