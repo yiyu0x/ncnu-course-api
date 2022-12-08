@@ -19,7 +19,7 @@
   "homepage": "https://github.com/yiyu0x/NCNU-course-API#readme",
   "dependencies": {
     "axios": "^0.18.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "mongoose": "^5.7.5",
     "xml2json": "^0.11.2"
   }
